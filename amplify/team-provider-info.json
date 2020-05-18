@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-crudapi-dev-173524-authRole",
+            "UnauthRoleArn": "arn:aws:iam::750103627526:role/amplify-crudapi-dev-173524-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::750103627526:role/amplify-crudapi-dev-173524-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-crudapi-dev-173524-deployment",
+            "UnauthRoleName": "amplify-crudapi-dev-173524-unauthRole",
+            "StackName": "amplify-crudapi-dev-173524",
+            "StackId": "arn:aws:cloudformation:us-east-1:750103627526:stack/amplify-crudapi-dev-173524/d3923a30-962a-11ea-8efa-0a48dc861a07",
+            "AmplifyAppId": "d2efq1zq5b05zy"
+        }
+    }
+}

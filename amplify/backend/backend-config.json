@@ -1,0 +1,25 @@
+{
+	"function": {
+		"crudapi4ac27924": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda"
+		}
+	},
+	"api": {
+		"crudapi": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "crudapi4ac27924",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			]
+		}
+	}
+}

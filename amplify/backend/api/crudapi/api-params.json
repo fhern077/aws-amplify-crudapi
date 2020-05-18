@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "crudapi4ac27924",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "crudapi",
+    "apiName": "crudapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "crudapi4ac27924"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-crudapi-dev-173524-authRole",
+        "unAuthRoleName": "amplify-crudapi-dev-173524-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "crudapi4ac27924",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

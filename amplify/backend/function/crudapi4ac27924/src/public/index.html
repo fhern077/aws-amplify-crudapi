@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomePage</title>
+</head>
+<body>
+      <h1>An Awesome Home Page</h1>
+</body>
+<script>
+// Example POST method implementation:
+async function postData(url = '', data = {}) {
+  // Default options are marked with *
+  const response = await fetch(url, {
+    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    mode: 'cors', // no-cors, *cors, same-origin
+    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: 'same-origin', // include, *same-origin, omit
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    referrerPolicy: 'no-referrer',
+    body: JSON.stringify(data)
+  });
+  return response.json(); // parses JSON response into native JavaScript objects
+}
+
+postData('api/analytics/', {
+  page: document.title.toLowerCase(), ipAddress:'127.0.0.1'
+})
+  .then(data => {
+    console.log(data); // JSON data parsed by `response.json()` call
+  });
+</script>
+</html>
